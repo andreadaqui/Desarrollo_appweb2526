@@ -1,0 +1,123 @@
+/* Estilos de las barras de navegacion*/
+/*UTILIZACION DE LISTA NO ORDENADA*/
+nav ul {list-style: none;  /* Elimina los puntos de la lista */
+padding: 0; /*Quita el espacio natural*/
+text-align: center;} /*Centra la lista*/
+
+nav ul li {
+    display: inline-block; /* Hace que se pongan uno al lado del otro */
+    margin: 0 15px;        /* Espacio entre botones */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;    /* texto en negrita  */
+    background-color: greenyellow;
+    padding: 12px 25px;        /* Tamaño del botón */
+    border-radius: 8px;        /* Bordes redondeados */
+    transition: 0.3s;          /* Animación suave */
+}
+
+nav ul li a:hover {
+    background-color: blue;
+    transform: scale(1.07);  /* Se agranda un poquito */
+}
+
+/* ----------------------------
+   Colores personalizados
+----------------------------- */
+:root {
+    --color-fondo: #f5f5f5;       /* fondo general */
+    --color-principal: #2E86C1;   /* azul principal */
+    --color-secundario: #117A65;  /* verde secundario */
+    --color-texto: #333333;       /* texto oscuro */
+    --color-tabla: #D5F5E3;       /* fondo tabla */
+}
+
+/* ----------------------------
+   Estilos generales
+----------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------
+   Encabezados
+----------------------------- */
+h1 {
+    color: var(--color-principal);
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+h3 {
+    color: var(--color-principal);
+    text-align: center;
+}
+
+/* ----------------------------
+   Párrafos
+----------------------------- */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: justify;  /* mejor lectura */
+}
+
+/* ----------------------------
+   Tablas
+----------------------------- */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: var(--color-tabla);
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+table th {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+/* ----------------------------
+   Listas
+----------------------------- */
+ul, ol {
+    width: 80%;
+    margin: 10px auto 20px auto;
+}
+
+/* ----------------------------
+   Video
+----------------------------- */
+video {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid var(--color-principal);
+    border-radius: 5px;
+}
+
+/* ----------------------------
+   Footer
+----------------------------- */
+footer {
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
